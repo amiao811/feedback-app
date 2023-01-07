@@ -5,9 +5,8 @@ function FeedbackStats({feedback}) {
 
   // Calculate ratings avg
   let average = feedback.reduce((acc, current) => {
-    return acc + current.rating
-  }, 0) / feedback.length
-
+    return acc + current.rating}, 0) / feedback.length
+    
   average = average.toFixed(1).replace(/[.,]0$/, '')
 
   return (
